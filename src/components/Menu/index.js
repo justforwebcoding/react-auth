@@ -14,7 +14,7 @@ class Menu extends React.Component {
             <NavLink to="/news">News</NavLink>
           </li>
           <li>
-            <NavLink to="/profile">Войти</NavLink>
+            <NavLink to="/profile">Профиль</NavLink>
           </li>
         </ul>
       </div>
