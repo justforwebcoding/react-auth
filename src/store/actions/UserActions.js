@@ -13,13 +13,8 @@ export function login(username, password) {
       type: LOGIN_REQUEST
     });
 
-    const data = {
-      username: window.localStorage.getItem("username") || {},
-      password: window.localStorage.getItem("password") || {}
-    };
-
     setTimeout(() => {
-      if (username === data.username && password === data.password) {
+      if (username === "admin" && password === "12345") {
         dispatch({
           type: LOGIN_SUCCESS,
           payload: {
@@ -32,7 +27,7 @@ export function login(username, password) {
         dispatch({
           type: ROUTING,
           payload: {
-            method: "push",
+            method: "replace",
             nextUrl: "/profile"
           }
         });

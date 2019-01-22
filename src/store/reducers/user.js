@@ -5,10 +5,7 @@ import {
   LOGOUT_SUCCESS
 } from "../constants/User";
 
-window.localStorage.setItem("username", "admin");
-window.localStorage.setItem("password", "12345");
-
-const userstate = (state = {}, action) => {
+const user = (state = {}, action) => {
   switch (action.type) {
     case LOGIN_REQUEST:
       console.log("REQUEST");
@@ -20,7 +17,6 @@ const userstate = (state = {}, action) => {
 
     case LOGIN_SUCCESS:
       console.log("SUCCESS");
-      console.log(action.payload);
       return {
         ...state,
         username: action.payload.username,
@@ -36,4 +32,4 @@ const userstate = (state = {}, action) => {
   }
 };
 
-export default userstate;
+export default user;

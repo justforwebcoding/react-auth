@@ -5,9 +5,8 @@ class News extends React.Component {
     return (
       <div className="news">
         <ul>
-          <li>Hello</li>
-          <li>It`s</li>
-          <li>Me</li>
+          <li>News</li>
+          <li>News</li>
         </ul>
       </div>
     );
